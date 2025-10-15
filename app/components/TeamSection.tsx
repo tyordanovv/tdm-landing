@@ -27,8 +27,16 @@ export default function TeamSection() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="text-[120px] md:text-[160px] lg:text-[200px] font-light text-[#c4c0b8] leading-none mb-16 text-left"
-            >
+              className="
+                text-[16vw]
+                sm:text-[12vw] 
+                md:text-[8vw] 
+                lg:text-[6vw]
+                xl:text-[5vw]
+                font-light text-[#c4c0b8]
+                leading-none mb-16 text-left
+                whitespace-normal break-words"              
+                >
               eкипът
             </motion.h2>
 
