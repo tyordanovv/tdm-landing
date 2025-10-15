@@ -47,7 +47,7 @@ export default function Hero() {
             whileTap={{ scale: 0.95 }}
             className="inline-block"
           >
-            <Link href="#gallery" className="btn btn-primary">
+            <Link href="/kontakti" className="btn btn-primary">
               Запазете консултация
               <ArrowRight className="w-4 h-4 ml-2" />
             </Link>
