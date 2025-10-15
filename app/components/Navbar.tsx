@@ -33,7 +33,7 @@ export default function Navbar() {
       transition={{ duration: 0.5 }}
       className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? "bg-white shadow-md" : "bg-transparent text-white"}`}
     >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="flex items-center hover:opacity-80 transition-opacity duration-300">
