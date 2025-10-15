@@ -13,10 +13,10 @@ export default function Footer() {
             <h3 className="text-2xl font-bold mb-4">TDM Interior Design</h3>
             <p className="mb-4 text-[var(--sand)]">Хармония между стил и функционалност</p>
             <div className="flex space-x-4">
-              <Link href="#" className="hover:text-[var(--earth)] transition duration-300">
+              <Link href="https://www.instagram.com/tdm_interior_studio/" className="hover:text-[var(--earth)] transition duration-300">
                 <Facebook />
               </Link>
-              <Link href="#" className="hover:text-[var(--earth)] transition duration-300">
+              <Link href="https://www.instagram.com/tdm_interior_studio/" className="hover:text-[var(--earth)] transition duration-300">
                 <Instagram />
               </Link>
             </div>
@@ -39,12 +39,12 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/#gallery" className="hover:text-[var(--earth)] transition duration-300">
+                <Link href="/porfolio" className="hover:text-[var(--earth)] transition duration-300">
                   Портфолио
                 </Link>
               </li>
               <li>
-                <Link href="/#pricing" className="hover:text-[var(--earth)] transition duration-300">
+                <Link href="/tseni" className="hover:text-[var(--earth)] transition duration-300">
                   Ценоразпис
                 </Link>
               </li>
@@ -63,22 +63,22 @@ export default function Footer() {
             <h4 className="text-xl font-semibold mb-4">Услуги</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/#pricing" className="hover:text-[var(--earth)] transition duration-300">
+                <Link href="/tseni" className="hover:text-[var(--earth)] transition duration-300">
                   Basic пакет
                 </Link>
               </li>
               <li>
-                <Link href="/#pricing" className="hover:text-[var(--earth)] transition duration-300">
+                <Link href="/tseni" className="hover:text-[var(--earth)] transition duration-300">
                   Standard пакет
                 </Link>
               </li>
               <li>
-                <Link href="/#pricing" className="hover:text-[var(--earth)] transition duration-300">
+                <Link href="/tseni" className="hover:text-[var(--earth)] transition duration-300">
                   Premium пакет
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-[var(--earth)] transition duration-300">
+                <Link href="kontakti" className="hover:text-[var(--earth)] transition duration-300">
                   Мебели по поръчка
                 </Link>
               </li>
