@@ -113,7 +113,7 @@ export default function PriceCards() {
                     {pkg.pricePerSqm ? (
                       <>
                         <div className="flex items-baseline justify-center gap-2">
-                          {/* <span className="text-sm font-semibold text-white/90">{pkg.currency}</span> */}
+                          <span className="text-sm font-semibold text-white/90">{pkg.currency}</span>
                           <span className="text-6xl font-bold text-white">{pkg.pricePerSqm}</span>
                           <span className="text-xl font-semibold text-white/90">,00</span>
                         </div>
