@@ -5,7 +5,6 @@ import { motion } from "framer-motion"
 import { Check, Calculator, ChevronDown } from "lucide-react"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
-import PriceCards from "../components/PriceCards"
 import PartnersMarquee from "../components/PartnersMarquee"
 import ContactFormSection from "../components/ContactFormSection"
 
@@ -15,7 +14,7 @@ const packages = [
     name: "БАЗОВ",
     label: "ПАКЕТ",
     pricePerSqm: 22,
-    currency: "BGN",
+    currency: "EUR",
     description: "Подходящ за визуално оформление на пространството",
     addedValue: "Клиентът вижда общо разпределение, стил и цветова схема",
     features: ["Консултация с дизайнер", "Снемане на точни размери", "2D Разпределение", "3D Визуализации"],
@@ -28,7 +27,7 @@ const packages = [
     name: "СТАНДАРТЕН",
     label: "ПАКЕТ",
     pricePerSqm: 32,
-    currency: "BGN",
+    currency: "EUR",
     description: "Подходящ за реализация на проекта",
     addedValue: "Подробна документация за изпълнение",
     features: [
@@ -47,11 +46,11 @@ const packages = [
     id: "premium",
     name: "ПРЕМИУМ",
     label: "ПАКЕТ",
-    pricePerSqm: null,
+    pricePerSqm: 45,
+    currency: "EUR",
+    note: "само за Бургас",
     priceText: "При запитване",
     priceSubtext: "След проведена среща",
-    currency: "BGN",
-    note: "само за Бургас",
     description: "Подходящ за клиенти, които искат пълна услуга",
     addedValue: "Спестява време и гарантира точно изпълнение",
     features: [
