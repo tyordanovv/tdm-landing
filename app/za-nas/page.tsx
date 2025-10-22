@@ -7,6 +7,7 @@ import Footer from "./../components/Footer"
 import TeamSection from "./../components/TeamSection"
 import ContactFormSection from "./../components/ContactFormSection"
 import PartnersMarquee from "./../components/PartnersMarquee"
+import Image from "next/image"
 
 const workProcess = [
   {
@@ -53,41 +54,38 @@ export default function AboutPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section
-        className="relative min-h-screen flex items-center justify-center overflow-hidden"
-        style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/5ta/5-ta-15.jpg')`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundAttachment: "fixed",
-        }}
-      >
-        <div className="container relative z-10">
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8 }}
-            className="text-center"
-          >
-            <motion.h1
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-light tracking-wide mb-6 text-white leading-tight"
-            >
-              За нас
-            </motion.h1>
-            <motion.p
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-white/90 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed tracking-wide"
-            >
-              Вярваме, че всеки проект започва със споделен разговор и ясно разбиране за мечтите и нуждите на клиента
-            </motion.p>
-          </motion.div>
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/5ta/5-ta-15.jpg"
+            alt="About us background"
+            fill
+            priority
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-black/50" />
         </div>
 
+        <div className="relative z-10 text-center text-white">
+          <div className="container relative z-10"> 
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8 }} className="text-center" > 
+              <motion.h1 initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }} 
+                className="text-4xl md:text-5xl lg:text-6xl font-light tracking-wide mb-6 text-white leading-tight" > 
+                  За нас
+                </motion.h1> 
+              <motion.p initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.4 }} className="text-white/90 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed tracking-wide" > 
+                Вярваме, че всеки проект започва със споделен разговор и ясно разбиране за мечтите и нуждите на клиента
+              </motion.p> 
+            </motion.div> 
+          </div> 
+            <motion.div 
+              initial={{ opacity: 0, y: -20 }} 
+              animate={{ opacity: 1, y: 0 }} 
+              transition={{ duration: 0.8, delay: 1, repeat: Number.POSITIVE_INFINITY, repeatType: "reverse", repeatDelay: 0.5, }} 
+              className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2 text-white/80" 
+            >
+          </motion.div>
+        </div>
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}

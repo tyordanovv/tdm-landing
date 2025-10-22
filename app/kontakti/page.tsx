@@ -5,7 +5,6 @@ import Footer from "../components/Footer"
 import ContactFormSection from "../components/ContactFormSection"
 import { motion } from "framer-motion"
 import Image from "next/image"
-import { ChevronDown } from "lucide-react"
 
 export default function ContactPage() {
   return (

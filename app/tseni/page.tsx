@@ -5,6 +5,8 @@ import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import PartnersMarquee from "../components/PartnersMarquee"
 import ContactFormSection from "../components/ContactFormSection"
+import { ChevronDown } from "lucide-react"
+import Image from "next/image"
 
 const packages = [
   {
@@ -74,24 +76,52 @@ export default function PricingPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section
-        className="relative min-h-[80vh] flex items-center justify-center text-center bg-cover bg-center"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/project_essenza/essenza-3.jpg')",
-          backgroundAttachment: "fixed",
-        }}
-      >
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/project_essenza/essenza-3.jpg"
+            alt="About us background"
+            fill
+            priority
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-black/50" />
+        </div>
+
+        <div className="relative z-10 text-center text-white">
+          <div className="container relative z-10"> 
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8 }} className="text-center" > 
+              <motion.h1 initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }} 
+                className="text-4xl md:text-5xl lg:text-6xl font-light tracking-wide mb-6 text-white leading-tight" > 
+                Цени    
+              </motion.h1> 
+              <motion.p initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.4 }} className="text-white/90 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed tracking-wide" > 
+                Изберете пакета, който най-добре отговаря на вашите нужди и стил
+              </motion.p> 
+            </motion.div> 
+          </div> 
+            <motion.div 
+              initial={{ opacity: 0, y: -20 }} 
+              animate={{ opacity: 1, y: 0 }} 
+              transition={{ duration: 0.8, delay: 1, repeat: Number.POSITIVE_INFINITY, repeatType: "reverse", repeatDelay: 0.5, }} 
+              className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2 text-white/80" 
+            >
+          </motion.div>
+        </div>
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-white"
+          transition={{
+            duration: 0.8,
+            delay: 1,
+            repeat: Number.POSITIVE_INFINITY,
+            repeatType: "reverse",
+            repeatDelay: 0.5,
+          }}
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2 text-white/80"
         >
-          <h1 className="text-5xl md:text-6xl font-light tracking-wide mb-6">Ценови пакети</h1>
-          <p className="text-white/80 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-            Изберете пакета, който най-добре отговаря на вашите нужди и стил
-          </p>
+          <ChevronDown className="w-6 h-6" />
+          <ChevronDown className="w-6 h-6" />
         </motion.div>
       </section>
 

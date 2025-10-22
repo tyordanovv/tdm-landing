@@ -27,14 +27,14 @@ export const metadata: Metadata = {
       "Професионално студио за интериорен дизайн в Бургас. Реализираме проекти за дом, офис и заведения с индивидуален стил и високо качество.",
     url: "https://www.tdm-interior-design.com",
     siteName: "ТДМ Интериорен Дизайн",
-    // images: [
-    //   {
-    //     url: "https://yourdomain.bg/images/og-cover.jpg",
-    //     width: 1200,
-    //     height: 630,
-    //     alt: "ТДМ Интериорен Дизайн Бургас – модерен и луксозен интериор",
-    //   },
-    // ],
+    images: [
+      {
+        url: "https://www.tdm-interior-design.com/logo_no_bg.png",
+        width: 1200,
+        height: 630,
+        alt: "ТДМ Интериорен Дизайн Бургас – модерен и луксозен интериор",
+      },
+    ],
     locale: "bg_BG",
     type: "website",
   },

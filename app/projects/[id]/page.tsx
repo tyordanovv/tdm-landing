@@ -3,7 +3,7 @@
 import { useParams, useRouter } from "next/navigation"
 import { motion } from "framer-motion"
 import { projects } from "@/app/data/projects"
-import { ChevronDown, X } from "lucide-react"
+import { X } from "lucide-react"
 import Navbar from "@/app/components/Navbar"
 import ContactFormSection from "@/app/components/ContactFormSection"
 import Footer from "@/app/components/Footer"
