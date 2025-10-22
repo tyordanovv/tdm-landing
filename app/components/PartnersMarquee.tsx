@@ -2,17 +2,21 @@
 
 export default function PartnersMarquee() {
   const partners = [
-    { name: "Architectural Digest", logo: "/architectural-digest-logo.png" },
-    { name: "Elle Decor", logo: "/elle-decor-logo.jpg" },
-    { name: "Interior Design Award", logo: "/interior-design-award-gold-medal.jpg" },
-    { name: "Best of Houzz", logo: "/houzz-best-of-award.jpg" },
-    { name: "Design Excellence", logo: "/design-excellence-award-trophy.jpg" },
-    { name: "Modern Living", logo: "/modern-living-magazine-logo.jpg" },
-    { name: "TDM", logo: "/partners/tdm-furniture.jpg" },
+    { name: "Logo1", logo: "/partners/logo-1.png" },
+    { name: "Logo2", logo: "/partners/logo-2.png" },
+    { name: "Logo3", logo: "/partners/logo-3.png" },
+    { name: "Logo4", logo: "/partners/logo-4.jpg" },
+    { name: "Logo5", logo: "/partners/logo-5.png" },
+    { name: "Logo6", logo: "/partners/logo-6.png" },
+    { name: "Logo7", logo: "/partners/logo-7.png" },
+    { name: "Logo8", logo: "/partners/logo-8.png" },
+    { name: "Logo9", logo: "/partners/logo-9.png" },
+    { name: "Logo10", logo: "/partners/logo-10.png" },
     { name: "djess", logo: "/partners/djess.jpg" },
     { name: "veg", logo: "/partners/veg.jpg" },
     { name: "Blum", logo: "/partners/blum-logo.png" },
-    { name: "hetich", logo: "/partners/hetich.webp" }
+    { name: "hetich", logo: "/partners/hetich.webp" },
+
   ]
 
   // Duplicate the array for seamless loop

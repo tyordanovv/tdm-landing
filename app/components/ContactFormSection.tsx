@@ -25,7 +25,7 @@ export default function ContactFormSection() {
             className="lg:col-span-4 relative h-[400px] lg:h-auto"
           >
             <Image
-              src="/modern-mid-century-modern-interior-design-living-r.jpg"
+              src="/design/design-1.jpg"
               alt="Interior Design"
               fill
               className="object-cover"

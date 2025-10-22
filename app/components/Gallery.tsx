@@ -34,8 +34,7 @@ export default function Gallery() {
             xl:text-[5vw]
             font-light text-[#c4c0b8]
             leading-none mb-16 text-left
-            whitespace-normal break-words
-          "        
+            whitespace-normal break-words"        
           >
           портфолио
         </motion.h2>

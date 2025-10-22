@@ -39,13 +39,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/porfolio" className="hover:text-[var(--earth)] transition duration-300">
+                <Link href="/projects" className="hover:text-[var(--earth)] transition duration-300">
                   Портфолио
-                </Link>
-              </li>
-              <li>
-                <Link href="/tseni" className="hover:text-[var(--earth)] transition duration-300">
-                  Ценоразпис
                 </Link>
               </li>
               <li>
@@ -63,18 +58,8 @@ export default function Footer() {
             <h4 className="text-xl font-semibold mb-4">Услуги</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/tseni" className="hover:text-[var(--earth)] transition duration-300">
-                  Basic пакет
-                </Link>
-              </li>
-              <li>
-                <Link href="/tseni" className="hover:text-[var(--earth)] transition duration-300">
-                  Standard пакет
-                </Link>
-              </li>
-              <li>
-                <Link href="/tseni" className="hover:text-[var(--earth)] transition duration-300">
-                  Premium пакет
+                <Link href="/za-nas" className="hover:text-[var(--earth)] transition duration-300">
+                  За нас
                 </Link>
               </li>
               <li>
