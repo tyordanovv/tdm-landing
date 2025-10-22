@@ -122,7 +122,7 @@ export default function ContactFormSection() {
                   >
                     <option value="basic">Basic - 22€/m²</option>
                     <option value="standard">Standard - 32€/m²</option>
-                    <option value="premium">Premium - 32€/m²</option>
+                    <option value="premium">Premium - 45€/m²</option>
                   </select>
                 </div>
 
