@@ -22,7 +22,7 @@ export const projects: Project[] = [
     category: "Minimal",
     image:
       "/cappuccino/cappuccino-7.jpg?height=800&width=1200",
-    title: "Cappuccino",
+    title: "Проект Cappuccino",
     location: "Пловдив, България",
     spaceType: "Всекидневна 40 кв.м",
     type: "Всекидневна",
@@ -46,8 +46,8 @@ export const projects: Project[] = [
     id: 9,
     category: "Modern",
     image:
-      "/5ta/5-ta-14.jpg",
-    title: "Модерен",
+      "/5ta/5-ta-13.jpg",
+    title: "Проект Модерен",
     location: "София, България",
     spaceType: "Apartament 88 кв.м",
     type: "Apartament",
@@ -77,15 +77,15 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 9,
+    id: 16,
     category: "Modern",
     image:
       "/project_bogoridi/bogoridi-3.jpg",
     title: "Проект Богориди",
     location: "Бургас, България",
-    spaceType: "Апартамент 69 кв.м",
+    spaceType: "Апартамент 60 кв.м",
     type: "Апартамент",
-    size: "72 кв.м",
+    size: "60 кв.м",
     style: "Модерен",
     description: "",
     challenges: "",
@@ -133,7 +133,7 @@ export const projects: Project[] = [
     category: "Modern",
     image:
       "/project_modern_comfort/project_modern_comfort-4.jpg",
-    title: "Модерен Комфорт",
+    title: "Проект Модерен Комфорт",
     location: "Бургас, България",
     spaceType: "Къща 175 кв.м",
     type: "Къща",
@@ -160,7 +160,7 @@ export const projects: Project[] = [
     category: "Modern",
     image:
       "/project_modern_comfort_kid/project_modern_comfort-kid-3.png",
-    title: "Комфорт Детска Стая",
+    title: "Проект Комфорт Детска Стая",
     location: "Бургас, България",
     spaceType: "Къща 175 кв.м",
     type: "Къща",
@@ -183,7 +183,7 @@ export const projects: Project[] = [
     category: "Modern",
     image:
       "/banevo/banevo-1.jpg",
-    title: "Къща Банево",
+    title: "Проект Къща Банево",
     location: "Бургас, България",
     spaceType: "Къща 168 кв.м",
     type: "Къща",
@@ -214,7 +214,7 @@ export const projects: Project[] = [
     category: "Modern",
     image:
       "/mezonet/mezonet-1.jpg",
-    title: "Мезонет Бургас",
+    title: "Проект Мезонет Бургас",
     location: "Бургас, България",
     spaceType: "Мезонет 92 кв.м",
     type: "Мезонет",
@@ -235,7 +235,7 @@ export const projects: Project[] = [
     category: "Modern",
     image:
       "/primorsko/primorsko-3.jpg",
-    title: "Мезонет Бургас",
+    title: "Проект Къща за гости",
     location: "Приморско, България",
     spaceType: "Къща 132 кв.м",
     type: "Къща",

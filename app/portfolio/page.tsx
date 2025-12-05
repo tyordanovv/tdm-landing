@@ -1,8 +1,6 @@
 "use client"
 
-import { useState } from "react"
 import { motion } from "framer-motion"
-import Link from "next/link"
 import { ChevronDown } from "lucide-react"
 import Navbar from "../components/Navbar"
 import Gallery from "../components/Gallery"

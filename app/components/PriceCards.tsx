@@ -6,19 +6,19 @@ export default function PriceCards() {
   const packages = [
     {
       id: "basic",
-      name: "БАЗОВ",
+      name: "BASIC",
       image: "/prices/price-basic.png", 
       link: "/tseni",
     },
     {
       id: "standard",
-      name: "СТАНДАРТЕН",
+      name: "STANDARD",
       image: "/prices/price-standard.jpg", 
       link: "/tseni",
     },
     {
       id: "premium",
-      name: "ПРЕМИУМ",
+      name: "PREMIUM",
       image: "/prices/price-premium.jpg", 
       link: "/tseni",
     },

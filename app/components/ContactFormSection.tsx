@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
-import { Phone } from "lucide-react"
+import { Instagram, Mail, Phone } from "lucide-react"
 
 export default function ContactFormSection() {
   return (
@@ -200,10 +200,10 @@ export default function ContactFormSection() {
                   <div>
                     <p className="text-lg font-medium text-[var(--charcoal)] mb-1">Телефон</p>
                     <a
-                      href="tel:+359894339386"
+                      href="tel:+359894666363"
                       className="text-xl font-semibold text-[var(--charcoal)] hover:text-[var(--earth)] transition"
                     >
-                      + (359) 0894 339 386
+                      + (359) 0894 666 363
                     </a>
                   </div>
                 </div>
@@ -213,10 +213,37 @@ export default function ContactFormSection() {
                   <div>
                     <p className="text-lg font-medium text-[var(--charcoal)] mb-1">Телефон</p>
                     <a
-                      href="tel:+359898533158"
+                      href="tel:+359899111033"
                       className="text-xl font-semibold text-[var(--charcoal)] hover:text-[var(--earth)] transition"
                     >
-                      + (359) 0898 533 158
+                      + (359) 0899 111 033
+                    </a>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <Mail className="w-8 h-8 text-[var(--earth)] flex-shrink-0 mt-1" />
+                  <div>
+                    <p className="text-lg font-medium text-[var(--charcoal)] mb-1">Email</p>
+                    <a
+                      href="mailto:tdmids10@gmail.com"
+                      className="text-xl font-semibold text-[var(--charcoal)] hover:text-[var(--earth)] transition"
+                    >
+                      tdmids10@gmail.com
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <Instagram className="w-8 h-8 text-[var(--earth)] flex-shrink-0 mt-1" />
+                  <div>
+                    <p className="text-lg font-medium text-[var(--charcoal)] mb-1">Instagram</p>
+                    <a
+                      href="https://instagram.com/yourprofile"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xl font-semibold text-[var(--charcoal)] hover:text-[var(--earth)] transition"
+                    >
+                      @tdm_interior_studio
                     </a>
                   </div>
                 </div>

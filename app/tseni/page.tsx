@@ -11,7 +11,7 @@ import Image from "next/image"
 const packages = [
   {
     id: "basic",
-    name: "БАЗОВ ПАКЕТ",
+    name: "пакет BASIC",
     subtitle: "Визуално оформление на пространството",
     image: "/prices/price-basic.png", 
     description: `
@@ -19,17 +19,11 @@ const packages = [
       Получавате професионални 2D планове и реалистични 3D визуализации, които ви помагат
       да вземете информирано решение за стила и цветовата схема.
     `,
-    features: [
-      "Консултация с дизайнер",
-      "Снемане на точни размери",
-      "2D Разпределение",
-      "3D Визуализации",
-    ],
-    price: "22 EUR / кв.м (без ДДС)",
+    price: "22 EUR / кв.м (с ДДС)",
   },
   {
     id: "standard",
-    name: "СТАНДАРТЕН ПАКЕТ",
+    name: "пакет STANDARD",
     subtitle: "Реализация на проекта с пълна документация",
     image: "/prices/price-standard.jpg", 
     description: `
@@ -37,36 +31,19 @@ const packages = [
       Получавате точни схеми и планове, които строителната бригада може директно да използва
       за изпълнение на ремонта с прецизност и последователност.
     `,
-    features: [
-      "Консултация с дизайнер",
-      "Снемане на точни размери",
-      "2D Разпределение",
-      "3D Визуализации",
-      "Работна документация",
-      "Количествени сметки и оферти",
-    ],
-    price: "32 EUR / кв.м (без ДДС)",
+    price: "32 EUR / кв.м (с ДДС)",
   },
   {
     id: "premium",
-    name: "ПРЕМИУМ ПАКЕТ",
+    name: "пакет PREMIUM",
     subtitle: "Пълна услуга — от идея до реализация",
     image: "/prices/price-premium.jpg", 
     description: `
       Пълно обслужване от проектиране до реализация. Нашият екип координира изпълнението,
       осъществява технически надзор и гарантира, че проектът се реализира точно според визията.
-      Подходящ за клиенти, които искат безкомпромисно качество и спокойствие.
+      Подходящ за клиенти, които искат безкомпромисно качество и спокойствие. Пакетът важи само за проекти в град Бургас.
     `,
-    features: [
-      "Консултация с дизайнер",
-      "Снемане на точни размери",
-      "2D Разпределение",
-      "3D Визуализации",
-      "Работна документация",
-      "Количествени сметки и оферти",
-      "Авторски надзор",
-    ],
-    price: "45 EUR / кв.м (само за Бургас)",
+    price: "45 EUR / кв.м (с ДДС)",
   },
 ]
 
@@ -173,7 +150,9 @@ export default function PricingPage() {
                 {pkg.subtitle}
               </p>
 
-              <p className="text-base text-gray-600 leading-relaxed mb-8 max-w-lg ml-auto mr-auto lg:ml-0 lg:mr-0">
+              <p className={`text-base text-gray-600 leading-relaxed mb-8 max-w-lg ${
+                index % 2 === 1 ? "" : "ml-auto"
+              }`}>
                 {pkg.description}
               </p>
 
@@ -182,12 +161,6 @@ export default function PricingPage() {
                   index % 2 === 1 ? "lg:pl-6" : "lg:pr-6"
                 }`}
               >
-                {pkg.features.map((feature, idx) => (
-                  <li key={idx} className="flex items-center gap-2 text-sm tracking-wide">
-                    <span className="text-[var(--earth)]">•</span>
-                    {feature}
-                  </li>
-                ))}
               </ul>
 
               <div className="text-lg text-[var(--charcoal)] font-semibold tracking-wide">

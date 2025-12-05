@@ -5,7 +5,6 @@ export default function PartnersMarquee() {
     { name: "Logo1", logo: "/partners/logo-1.png" },
     { name: "Logo2", logo: "/partners/logo-2.png" },
     { name: "Logo3", logo: "/partners/logo-3.png" },
-    { name: "Logo4", logo: "/partners/logo-4.jpg" },
     { name: "Logo5", logo: "/partners/logo-5.png" },
     { name: "Logo6", logo: "/partners/logo-6.png" },
     { name: "Logo7", logo: "/partners/logo-7.png" },
